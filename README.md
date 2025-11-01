@@ -5,14 +5,23 @@ Command Line Tool used to copy from and store common template projects for ease 
 
 ---
 
-
-
-
-
-
-To use download the repo and run 
+To set up download the repo and run 
 ```
 zig build-exe -OReleaseSmall z_init.zig
 ```
 
 Then add the folder that containes the outputted file to your path. (Windows Path, or Bash RC). Then you can use the program from anywhere inside your terminal. (Close and reopen the terminal if it isn't working) The folder that contains the exe will need to have a subfolder called "FolderTemplates". This is so the program has a good place to store the template-files/folders.
+
+---
+
+To get to the help menu run :
+```
+z_init -h 
+```
+
+A simple example if you are using the provided template folder is this :
+```
+z_init raylib
+```
+
+This will set up a raylib project.
